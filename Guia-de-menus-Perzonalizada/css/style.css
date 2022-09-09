@@ -1,0 +1,49 @@
+body{
+    font-family: helvetica, arial, sans-serif;
+    margin:0em;
+    color: black;
+    overflow-x: hidden;
+}
+
+
+.slide{
+    height: 30rem;
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+}
+
+.carousel-item{
+    height: 30rem;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#column-cards-1 {
+    display:flex;
+    justify-content: center;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    border: 0 !important;
+    width: 80rem;
+    margin-top: 10rem;
+}
+
+
+#carouselExampleDark {
+    display: flex;
+    justify-content: center;}
+    
+
+#column-register-1 {
+    position: absolute;
+    top: 8px;
+    left: 1020px;
+       
+}
+
+.card {
+    height: auto;
+}
