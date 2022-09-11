@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registro</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src=" js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src=" js/jquery-3.6.1.js"> </script>
+  <link rel="shortcut icon" href="img/icon8.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="calculoImc.html">Cálculo IMC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="contacto.html" role="button" aria-expanded="false">
+              Contacto
+            </a>
+          </li>
+        </ul>
+        <!-- crear enlaces de iniciar sesión y de registro en un ul y alinear a la derecha-->
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="login.html">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="registro.html">Registro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Crear formulario de registro -->
+  <div class="container register-container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Registro</h1>
+        <form action="registro.php" method="POST">
+          <div class="form-group"> 
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido">
+          </div>
+          <div class="form-group">
+
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
