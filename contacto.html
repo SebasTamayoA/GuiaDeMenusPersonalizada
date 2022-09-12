@@ -15,6 +15,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="calculoImc.html">Cálculo IMC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="contacto.html" role="button" aria-expanded="false">
+              Contacto
+            </a>
+          </li>
+        </ul>
+        <!-- crear enlaces de iniciar sesión y de registro en un ul y alinear a la derecha-->
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="login.html">Iniciar sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- crear formulario de contacto -->
+  <div class="container contact-container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center">Contacto</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <form action="contacto.html" method="POST">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduce tu nombre">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Introduce tu email">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+
+  <div class="container mt-2">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="calculoImc.html" class="nav-link px-2 text-muted">Cálculo IMC</a></li>
+        <li class="nav-item"><a href="sobrenosotros.html" class="nav-link px-2 text-muted">Sobre nosotros</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+      </ul>
+      <p class="text-center text-muted">Copyright &copy; 2022 Nutrical Demo1, All Rights Reserved</p>
+    </footer>
+  </div>
   
 </body>
 </html>
