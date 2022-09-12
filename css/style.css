@@ -79,3 +79,8 @@ span {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+.footer-container {
+  background-color: #ccc7c7;
+  color: white;
+}
