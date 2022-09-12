@@ -47,7 +47,7 @@ body {
 }
 
 .login-container {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .register-container {
@@ -63,5 +63,9 @@ body {
 }
 
 .contact-container {
+  margin-top: 5%;
+}
+
+.policies-container {
   margin-top: 5%;
 }
