@@ -3,17 +3,18 @@
 
 <head>
     <title>Calculo IMC</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script type="text/javascript" src=" js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src=" js/jquery-3.6.1.js"> </script>
-  <link rel="shortcut icon" href="img/icon8.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src=" js/bootstrap.min.js"> </script>
+    <script type="text/javascript" src=" js/jquery-3.6.1.js"> </script>
+    <link rel="shortcut icon" href="img/icon8.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/scripts.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="calculoImc.html">Cálculo IMC</a>
+                        <a class="nav-link active" aria-current="page" href="calculoImc.html">Cálculo IMC</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="sobrenosotros.html">Sobre nosotros</a>
@@ -52,6 +53,39 @@
         </div>
     </nav>
 
+    <div class="container imc-container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Cálculo IMC</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="calculoImc.html" method="POST">
+                    <div class="mb-3">
+                        <label for="peso" class="form-label">Peso (Kg)</label>
+                        <input type="number" class="form-control" id="peso" name="peso" placeholder="Peso en kilogramos">
+                    </div>
+                    <div class="mb-3">
+                        <label for="altura" class="form-label">Altura (g)</label>
+                        <input type="number" class="form-control" id="altura" name="altura" placeholder="Altura en metros">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="calcularImc(); validarPesoYAltura()">Calcular</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Resultado</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center"> 
+                    <span id="resultado"></span>
+                </p>
+            </div>
+        </div>
     <div class="container mt-2">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
