@@ -17,7 +17,9 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Inicio</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="calculoImc.html">Cálculo IMC</a>
+            <a class="nav-link" href="calculoImc.html">Cálculo IMC</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -33,12 +35,15 @@
               Recetas
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Bajar de peso</a></li>
-              <li><a class="dropdown-item" href="#">Subir de peso</a></li>
+              <li><a class="dropdown-item" href="recetasbajarpeso.html">Bajar de peso</a></li>
+              <li><a class="dropdown-item" href="recetassubirpeso.html">Subir de peso</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="contacto.html" role="button" aria-expanded="false">
@@ -46,10 +51,9 @@
             </a>
           </li>
         </ul>
-        <!-- crear enlaces de iniciar sesión y de registro en un ul y alinear a la derecha-->
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="login.html">Iniciar sesión</a>
+            <a class="nav-link active" aria-current="page" href="login.html">Iniciar sesión</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="registro.html">Registro</a>
@@ -60,7 +64,7 @@
   </nav>
 
   <!-- Crear formulario de inicio de sesión -->
-  <div class="container login-container">
+  <div class="container mt-5">
     <div class="row">
       <div class="col-md-4 offset-md-4 form login-form">
         <form action="index.html" method="POST">
@@ -84,21 +88,20 @@
         </form>
       </div>
     </div>
+  </div>
 
 
 
 
-    <div class="container mt-2">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-          <li class="nav-item"><a href="calculoImc.html" class="nav-link px-2 text-muted">Cálculo IMC</a></li>
-          <li class="nav-item"><a href="sobrenosotros.html" class="nav-link px-2 text-muted">Sobre nosotros</a></li>
-          <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
-        </ul>
-        <p class="text-center text-muted">Copyright &copy; 2022 Nutrical Demo1, All Rights Reserved</p>
-      </footer>
-    </div>
+    <footer class="bg-light text-center text-white">
+      <ul class="nav justify-content-center border-bottom pb-3 pt-3 mb-3 mt-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="calculoImc.html" class="nav-link px-2 text-muted">Cálculo IMC</a></li>
+        <li class="nav-item"><a href="sobrenosotros.html" class="nav-link px-2 text-muted">Sobre nosotros</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+      </ul>
+      <p class="text-center text-muted justify-content-center pb-3">Copyright &copy; 2022 Nutrical Demo1, All Rights Reserved</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

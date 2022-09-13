@@ -42,36 +42,16 @@ body {
   width: 100vw;
 }
 
+.nav-link:hover {
+  color: #1c1cd2 !important;
+}
+  
 .card-img-top {
   border-radius: 50%;
 }
 
-.login-container {
-  margin-top: 5%;
-}
-
-.register-container {
-  margin-top: 5%;
-}
-
 .form-group {
   margin: 0 0 0.5rem 0;
-}
-
-.home-container {
-  margin-top: 5%;
-}
-
-.contact-container {
-  margin-top: 5%;
-}
-
-.policies-container {
-  margin-top: 5%;
-}
-
-.imc-container {
-  margin-top: 5%;
 }
 
 span {
@@ -80,7 +60,17 @@ span {
   font-size: 1.5rem;
 }
 
-.footer-container {
-  background-color: #ccc7c7;
-  color: white;
+/* Posicionar footer siempre abajo */
+html, body {
+  height: 100%;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
