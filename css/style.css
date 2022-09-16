@@ -76,3 +76,7 @@ footer {
   margin-top: auto;
 }
 
+.accordion-button {
+
+  font-size: 2rem;
+} 
