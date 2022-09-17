@@ -6,6 +6,11 @@ body {
   background-color: #eee;
 }
 
+.card {
+  display: block;
+
+}
+
 .slide {
   height: 30rem;
   width: 70rem;
