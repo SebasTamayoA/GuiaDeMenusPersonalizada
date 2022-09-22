@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Registro</title>
   <meta charset="UTF-8">
@@ -14,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -63,45 +65,49 @@
     </div>
   </nav>
 
-  <!-- Crear formulario de registro -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-center">Registro</h1>
-        <form action="registro.php" method="POST">
-          <div class="form-group"> 
-            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido">
-          </div>
-          <div class="form-group">
+  <main>
+    <!-- Crear formulario de registro -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center">Registro</h1>
+          <form action="registro.php" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido">
+            </div>
+            <div class="form-group">
 
-            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña">
-          </div>
-          <button type="submit" class="btn btn-primary">Registrarse</button>
-        </form>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
 
 
+  <footer class="bg-light text-center text-white">
+    <ul class="nav justify-content-center border-bottom pb-3 pt-3 mb-3 mt-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+      <li class="nav-item"><a href="calculoImc.html" class="nav-link px-2 text-muted">Cálculo IMC</a></li>
+      <li class="nav-item"><a href="sobrenosotros.html" class="nav-link px-2 text-muted">Sobre nosotros</a></li>
+      <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
+    </ul>
+    <p class="text-center text-muted justify-content-center pb-3">Copyright &copy; 2022 Nutrical Demo1, All Rights
+      Reserved</p>
+  </footer>
 
-
-    <footer class="bg-light text-center text-white">
-      <ul class="nav justify-content-center border-bottom pb-3 pt-3 mb-3 mt-3">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-        <li class="nav-item"><a href="calculoImc.html" class="nav-link px-2 text-muted">Cálculo IMC</a></li>
-        <li class="nav-item"><a href="sobrenosotros.html" class="nav-link px-2 text-muted">Sobre nosotros</a></li>
-        <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
-      </ul>
-      <p class="text-center text-muted justify-content-center pb-3">Copyright &copy; 2022 Nutrical Demo1, All Rights Reserved</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

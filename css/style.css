@@ -68,20 +68,17 @@ span {
 }
 
 /* Posicionar footer siempre abajo */
-html, body {
-  height: 100%;
-}
 
 body {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
 }
 
-footer {
-  margin-top: auto;
+main {
+  flex: 1 0 auto;
 }
 
 .accordion-button {
-
   font-size: 2rem;
 } 

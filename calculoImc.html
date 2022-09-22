@@ -66,77 +66,79 @@
     </div>
   </nav>
 
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-center">Cálculo IMC</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-6 col-sm-12>
-                <form action=" calculoImc.html" method="POST">
-        <div class="mb-3">
-          <label for="peso" class="form-label">Peso (Kg)</label>
-          <input type="number" class="form-control" id="peso" name="peso" placeholder="Peso en kilogramos">
+  <main>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Cálculo IMC</h1>
         </div>
-        <div class="mb-3">
-          <label for="altura" class="form-label">Altura (m)</label>
-          <input type="number" class="form-control" id="altura" name="altura" placeholder="Altura en metros">
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-sm-12>
+                  <form action=" calculoImc.html" method="POST">
+          <div class="mb-3">
+            <label for="peso" class="form-label">Peso (Kg)</label>
+            <input type="number" class="form-control" id="peso" name="peso" placeholder="Peso en kilogramos">
+          </div>
+          <div class="mb-3">
+            <label for="altura" class="form-label">Altura (m)</label>
+            <input type="number" class="form-control" id="altura" name="altura" placeholder="Altura en metros">
+          </div>
+          <button type="button" class="btn btn-primary" onclick="validarPesoYAltura()">Calcular</button>
+          </form>
         </div>
-        <button type="button" class="btn btn-primary" onclick="validarPesoYAltura()">Calcular</button>
-        </form>
+        <div class="col-12 col-md-6 col-sm-12">
+          <!-- insertar tabla informativa de indices de masa corporal -->
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">IMC</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Menos de 18.5</td>
+                <td>Bajo peso</td>
+              </tr>
+              <tr>
+                <td>Entre 18.5 y 24.9</td>
+                <td>Peso normal</td>
+              </tr>
+              <tr>
+                <td>Entre 25 y 29.9</td>
+                <td>Sobrepeso</td>
+              </tr>
+              <tr>
+                <td>Entre 30 y 34.9</td>
+                <td>Obesidad grado 1</td>
+              </tr>
+              <tr>
+                <td>Entre 35 y 39.9</td>
+                <td>Obesidad grado 2</td>
+              </tr>
+              <tr>
+                <td>40 o más</td>
+                <td>Obesidad grado 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="col-12 col-md-6 col-sm-12">
-        <!-- insertar tabla informativa de indices de masa corporal -->
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">IMC</th>
-              <th scope="col">Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Menos de 18.5</td>
-              <td>Bajo peso</td>
-            </tr>
-            <tr>
-              <td>Entre 18.5 y 24.9</td>
-              <td>Peso normal</td>
-            </tr>
-            <tr>
-              <td>Entre 25 y 29.9</td>
-              <td>Sobrepeso</td>
-            </tr>
-            <tr>
-              <td>Entre 30 y 34.9</td>
-              <td>Obesidad grado 1</td>
-            </tr>
-            <tr>
-              <td>Entre 35 y 39.9</td>
-              <td>Obesidad grado 2</td>
-            </tr>
-            <tr>
-              <td>40 o más</td>
-              <td>Obesidad grado 3</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Resultado</h2>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center">Resultado</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <p class="text-center">
-          <span id="resultado"></span>
-        </p>
+      <div class="row">
+        <div class="col-12">
+          <p class="text-center">
+            <span id="resultado"></span>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <footer class="bg-light text-center text-white">
     <ul class="nav justify-content-center border-bottom pb-3 pt-3 mb-3 mt-3">
